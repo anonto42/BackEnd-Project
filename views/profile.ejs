@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Profile</title>
+</head>
+<body>
+    <div id="phone">
+      <p id="phone-speaker"></p>
+      <div >
+        <header>
+          <button style="margin-right:20px;
+          padding: 2px 10px; border: none;
+          background-color: aquamarine; border-radius: 3px;">Logout</button>
+          <p id="menu">
+            <svg class="pointer" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+              <defs>
+                <linearGradient id="MenuGradient">
+                  <stop offset="5%" stop-color="#AEDD9A" />
+                  <stop offset="95%" stop-color="#44B973" />
+                </linearGradient>
+              </defs>
+              <path d="M3 12H15M3 6H21M3 18H21" stroke="url(#MenuGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </p>
+          <p id="title">Profile</p>
+          <p id="settings">
+            <svg class="pointer" width="24px" height="24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span></span>
+          </p>
+        </header>
+        <div id="content">
+          <img id="avatar" width="100" height="100" src="https://images.pexels.com/photos/1236906/pexels-photo-1236906.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Brad Pitt">
+          <svg width="142px" height="142px" viewBox="0 0 24 24" fill="none" id="avatar-svg">
+            <defs>
+              <linearGradient id="AvatarGradient">
+                <stop offset="5%" stop-color="#AEDD9A" />
+                <stop offset="95%" stop-color="#44B973" />
+              </linearGradient>
+            </defs>
+            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C14.8273 3 17.35 4.30367 19 6.34267" stroke="url(#AvatarGradient)" stroke-width="0.5" stroke-linecap="round"></path>
+          </svg>
+          <p id="user-name"><%= user.userName =%></p>
+          <p id="user-profession">What is your profation</p>
+          <div id="user-general-values">
+            <p class="pointer">
+              <span>531</span>
+              <span>Followers</span>
+            </p>
+            <div class="line"></div>
+            <p class="pointer">
+              <span>123</span>
+              <span>Following</span>
+            </p>
+            <div class="line"></div>
+            <p class="pointer">
+              <span>231</span>
+              <span>Posts</span>
+            </p>
+            </div>
+          </div>
+          <div class="card" id="card" style="width: 100px;">
+            <img src="/images/pLogo.svg" class="card-img-top" style="width: 100px;" alt="...">
+            <div class="card-body" style="width: 100px;">
+              <p class="card-text" style="font-size: 5px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

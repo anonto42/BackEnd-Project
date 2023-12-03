@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Home Page</title>
+</head>
+<body>
+  <div class="container" style="min-height: 415px;">
+    <div class="content">
+      <!--pinterest logo-->
+      <img src="/images/MyLogo.svg" alt="pin logo" class="img1" />
+      <p class="header" style="line-height: 30px;">Login Your account</p>
+
+        <p class="error" style="margin: 10px 0; color: red; font-weight: 500;"><%= error %></p>
+      <form action="/login" method="post">
+      <input type="text" name="username" placeholder="username" class="detail" /><br />
+      <input type="password" name="password" placeholder="Password" class="detail" />
+      <input type="submit" value="Login Account" class="btn int">
+      </form>
+      
+      <a href="/forgot">Forgot your password?</a>
+    </div>
+  </div>
+  <script src="../public/javascripts/script.js"></script>
+</body>
+</html>
